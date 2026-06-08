@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CYBORG DIRECTIVE | Neural Sync Systems</title>
+  <meta name="description" content="Integrated neural systems for the next phase of human evolution. Precision-engineered cybernetic augmentations with encrypted quantum data buffering." />
+  <meta name="theme-color" content="#131318" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Ambient FX Layers -->
+  <div class="bg-grid-circuit" aria-hidden="true"></div>
+  <div class="laser-scanner" aria-hidden="true"></div>
+
+  <!-- ======== NAVIGATION ======== -->
+  <header class="nav-bar" id="nav-bar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">CYBORG_DIRECTIVE</a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#augments" class="active">AUGMENTS</a>
+        <a href="#specs">SPECS</a>
+        <a href="#network">NETWORK</a>
+        <a href="#core">CORE</a>
+      </nav>
+      <button class="btn-primary clip-octagon-sm btn-scan" id="nav-cta">INITIALIZE_LINK</button>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu-close clip-octagon-sm" id="mobile-close" aria-label="Close menu">✕</button>
+    <a href="#augments" class="mobile-link">AUGMENTS</a>
+    <a href="#specs" class="mobile-link">SPECS</a>
+    <a href="#network" class="mobile-link">NETWORK</a>
+    <a href="#core" class="mobile-link">CORE</a>
+  </div>
+
+  <!-- ======== MAIN CONTENT ======== -->
+  <main class="main-content">
+
+    <!-- ── HERO ── -->
+    <section class="hero clip-octagon scan-line-overlay" id="hero">
+      <div class="hero-content">
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          SYSTEM STATUS: ONLINE
+        </div>
+        <h1 class="hero-title">EVOLVE BEYOND<br>BIOLOGY</h1>
+        <p class="hero-desc">Integrated neural systems for the next phase of human evolution. Precision. Power. Protocol.</p>
+        <div class="hero-actions">
+          <button class="btn-primary clip-octagon-sm btn-scan" id="btn-init">INITIALIZE AUGMENTATION</button>
+          <button class="btn-ghost clip-octagon-sm" id="btn-specs">VIEW CORE SPECS</button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <img
+          src="assets/cybernetic-eye.png"
+          alt="Cybernetic Eye Concept — A futuristic close-up of a neural implant with glowing cyan iris"
+          class="hero-image clip-octagon"
+          id="hero-img"
+          loading="eager"
+        />
+      </div>
+    </section>
+
+    <!-- ── THE AUGMENTATION SUITE ── -->
+    <section id="augments" class="reveal">
+      <h2 class="section-title">THE AUGMENTATION SUITE</h2>
+    </section>
+
+    <div class="card-grid reveal-stagger" id="card-grid">
+      <!-- Card 1 — Neural Core -->
+      <article class="aug-card clip-octagon reveal" id="card-neural">
+        <span class="card-code">C-01</span>
+        <div class="card-icon-wrapper clip-octagon-sm">
+          <span class="material-symbols-outlined">memory</span>
+        </div>
+        <h3 class="card-title">Neural Core</h3>
+        <p class="card-desc">Direct cerebral interface. Accelerates cognitive processing by 400% with encrypted quantum data buffering.</p>
+        <span class="card-status clip-octagon-sm data-chip active">STATUS: ACTIVE</span>
+      </article>
+
+      <!-- Card 2 — Kinetic Limbs -->
+      <article class="aug-card clip-octagon reveal" id="card-kinetic">
+        <span class="card-code">C-02</span>
+        <div class="card-icon-wrapper clip-octagon-sm">
+          <span class="material-symbols-outlined">precision_manufacturing</span>
+        </div>
+        <h3 class="card-title">Kinetic Limbs</h3>
+        <p class="card-desc">Carbon-nanotube reinforced servos. Provides superhuman strength and micro-millimeter precision control.</p>
+        <span class="card-status clip-octagon-sm data-chip standby">STATUS: STANDBY</span>
+      </article>
+
+      <!-- Card 3 — Optical Matrix -->
+      <article class="aug-card clip-octagon reveal" id="card-optical">
+        <span class="card-code">C-03</span>
+        <div class="card-icon-wrapper clip-octagon-sm">
+          <span class="material-symbols-outlined">visibility</span>
+        </div>
+        <h3 class="card-title">Optical Matrix</h3>
+        <p class="card-desc">Multi-spectrum visual overlays. Includes thermal, electromagnetic, and augmented reality HUD integration.</p>
+        <span class="card-status clip-octagon-sm data-chip encrypted">STATUS: ENCRYPTED</span>
+      </article>
+    </div>
+
+    <!-- ── SYSTEM PERFORMANCE ── -->
+    <section class="perf-section clip-octagon scan-line-overlay reveal" id="specs">
+      <div class="perf-header">
+        <h2>SYSTEM PERFORMANCE</h2>
+        <span class="perf-live">LIVE READOUT // SEC-T9</span>
+      </div>
+      <div class="perf-stats" id="perf-stats">
+        <!-- Efficiency -->
+        <div class="stat-row">
+          <div class="stat-label-row">
+            <span>EFFICIENCY</span>
+            <span class="stat-value" id="val-eff">98.4%</span>
+          </div>
+          <div class="stat-bar-track clip-octagon-sm">
+            <div class="stat-bar-fill cyan" data-width="98.4" id="bar-eff"></div>
+          </div>
+        </div>
+        <!-- Latency -->
+        <div class="stat-row">
+          <div class="stat-label-row">
+            <span>LATENCY</span>
+            <span class="stat-value" id="val-lat">2.1ms</span>
+          </div>
+          <div class="stat-bar-track clip-octagon-sm">
+            <div class="stat-bar-fill cyan" data-width="15" id="bar-lat"></div>
+          </div>
+        </div>
+        <!-- Neural Load -->
+        <div class="stat-row">
+          <div class="stat-label-row">
+            <span>NEURAL LOAD</span>
+            <span class="stat-value error" id="val-load">74.2%</span>
+          </div>
+          <div class="stat-bar-track clip-octagon-sm">
+            <div class="stat-bar-fill error" data-width="74.2" id="bar-load"></div>
+          </div>
+        </div>
+        <!-- Sync Rate -->
+        <div class="stat-row">
+          <div class="stat-label-row">
+            <span>SYNC RATE</span>
+            <span class="stat-value" id="val-sync">99.97%</span>
+          </div>
+          <div class="stat-bar-track clip-octagon-sm">
+            <div class="stat-bar-fill cyan" data-width="99.97" id="bar-sync"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── NETWORK & TERMINAL ── -->
+    <section class="reveal" id="network">
+      <h2 class="section-title" style="margin-bottom: 24px;">NETWORK TOPOLOGY</h2>
+    </section>
+
+    <div class="network-section reveal-stagger">
+      <!-- Node Registry -->
+      <div class="network-panel clip-octagon reveal" id="panel-nodes">
+        <h3 class="network-panel-title">
+          <span class="material-symbols-outlined">hub</span>
+          NODE REGISTRY
+        </h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>NODE_ID</th>
+              <th>TYPE</th>
+              <th>PING</th>
+              <th>STATUS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="highlight">NX-7741</td>
+              <td>CORTEX</td>
+              <td>0.3ms</td>
+              <td><span class="data-chip active clip-octagon-sm">ACTIVE</span></td>
+            </tr>
+            <tr>
+              <td class="highlight">NX-7742</td>
+              <td>SERVO</td>
+              <td>1.2ms</td>
+              <td><span class="data-chip active clip-octagon-sm">ACTIVE</span></td>
+            </tr>
+            <tr>
+              <td class="highlight">NX-7743</td>
+              <td>OPTIC</td>
+              <td>0.8ms</td>
+              <td><span class="data-chip standby clip-octagon-sm">STANDBY</span></td>
+            </tr>
+            <tr>
+              <td class="highlight">NX-7744</td>
+              <td>REFLEX</td>
+              <td class="warning">14.6ms</td>
+              <td><span class="data-chip encrypted clip-octagon-sm">OFFLINE</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- System Terminal -->
+      <div class="network-panel clip-octagon reveal" id="panel-terminal">
+        <h3 class="network-panel-title">
+          <span class="material-symbols-outlined">terminal</span>
+          SYSTEM TERMINAL
+        </h3>
+        <div class="terminal-panel" id="terminal">
+          <div class="line-dim">[2024-11-07 04:12:33] BOOT SEQUENCE INITIATED</div>
+          <div class="line-prompt">> LOADING NEURAL_CORE v7.4.1 ...</div>
+          <div class="line-success">[OK] Neural Core online — 400% cognitive acceleration</div>
+          <div class="line-prompt">> INITIALIZING KINETIC_SERVOS ...</div>
+          <div class="line-success">[OK] Kinetic Limbs calibrated — precision: 0.001mm</div>
+          <div class="line-prompt">> SYNCING OPTICAL_MATRIX ...</div>
+          <div class="line-dim">[WAIT] Optical Matrix encryption handshake pending</div>
+          <div class="line-prompt">> ESTABLISHING NEURAL_LINK ...</div>
+          <div class="line-success">[OK] Link established — latency: 2.1ms</div>
+          <div class="line-prompt">> RUNNING DIAGNOSTICS ...</div>
+          <div class="line-success">[OK] All primary systems nominal</div>
+          <div class="line-error">[WARN] Neural load at 74.2% — approaching threshold</div>
+          <div class="line-prompt">> SYSTEM READY_</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CORE DIRECTIVE ── -->
+    <section class="reveal" id="core">
+      <h2 class="section-title" style="margin-bottom: 24px;">CORE DIRECTIVE</h2>
+    </section>
+
+    <div class="network-section reveal-stagger">
+      <!-- Mission Brief -->
+      <div class="network-panel clip-octagon reveal" id="panel-mission">
+        <h3 class="network-panel-title">
+          <span class="material-symbols-outlined">shield</span>
+          MISSION BRIEF
+        </h3>
+        <p class="card-desc" style="margin-bottom:12px;">The Cyborg Directive program exists to push the boundaries of human potential through precision-engineered cybernetic augmentations. Every component is designed for maximum operational efficiency in high-stakes environments.</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>PARAMETER</th>
+              <th>VALUE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>CLEARANCE</td><td class="highlight">OMEGA-7</td></tr>
+            <tr><td>PROTOCOL</td><td class="highlight">NEURAL_SYNC v3.2</td></tr>
+            <tr><td>ENCRYPTION</td><td class="highlight">AES-512 QUANTUM</td></tr>
+            <tr><td>UPTIME</td><td class="highlight">99.997%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Augmentation Timeline -->
+      <div class="network-panel clip-octagon reveal" id="panel-timeline">
+        <h3 class="network-panel-title">
+          <span class="material-symbols-outlined">timeline</span>
+          AUGMENTATION PHASES
+        </h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>PHASE</th>
+              <th>MODULE</th>
+              <th>STATUS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="highlight">PHASE 1</td>
+              <td>Neural Core Integration</td>
+              <td><span class="data-chip active clip-octagon-sm">COMPLETE</span></td>
+            </tr>
+            <tr>
+              <td class="highlight">PHASE 2</td>
+              <td>Kinetic Limb Bonding</td>
+              <td><span class="data-chip active clip-octagon-sm">COMPLETE</span></td>
+            </tr>
+            <tr>
+              <td class="highlight">PHASE 3</td>
+              <td>Optical Matrix Overlay</td>
+              <td><span class="data-chip standby clip-octagon-sm">IN PROGRESS</span></td>
+            </tr>
+            <tr>
+              <td class="highlight">PHASE 4</td>
+              <td>Full Neural Sync</td>
+              <td><span class="data-chip encrypted clip-octagon-sm">PENDING</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">CYBORG_DIRECTIVE</div>
+      <nav class="footer-links">
+        <a href="#">TERMINAL_ACCESS</a>
+        <a href="#">PRIVACY_ENCRYPTION</a>
+        <a href="#">DATA_PROTOCOL</a>
+      </nav>
+      <div class="footer-copy">© 2024 NEURAL_SYNC_SYSTEMS. ALL_RIGHTS_RESERVED.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
